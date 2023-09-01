@@ -39,6 +39,14 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
+  - PlayerHitMe
+  - Update
+  - FixedUpdate
+  - PlayerIsDie
+  - ApplyUpdatedHp
+  - IsPunch
+  - OnEnable
+  - ActiveFist
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

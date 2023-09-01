@@ -74,7 +74,7 @@ public class SG_MultiPlayerMove : MonoBehaviourPun
         {
             rigid.AddForce(jumpForce, ForceMode.Impulse);
             isJump = true;
-            animator.Play("Jump");
+            animator.SetBool("JumpBool", isJump);
         }
     }
 

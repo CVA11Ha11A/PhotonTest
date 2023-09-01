@@ -23,7 +23,8 @@ public class TitleSceneManager : MonoBehaviourPunCallbacks
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
-
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         //룸 접속 버튼 비활성화 (중복접속 명령을 방지하기위해)
         //  interactable 상호작용 여부를 명령하는 기능
         joinButton.interactable = false;
