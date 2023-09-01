@@ -46,7 +46,7 @@ using Photon.Pun;
             if (isEndAttack == false && punchObj.activeSelf == false && isPunch == false)    // TODO : 공격 쿨타임 같은거 조건으로 넣어주면 될거같음
             {
 
-                Debug.Log("펀치 오브젝트 켜기 실행");
+                //Debug.Log("펀치 오브젝트 켜기 실행");
                 isEndAttack = true;
                 isPunch = true;
                 animator.SetBool("IsPunch", isPunch);
