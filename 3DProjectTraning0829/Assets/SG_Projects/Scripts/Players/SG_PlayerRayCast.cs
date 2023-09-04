@@ -41,7 +41,7 @@ public class SG_PlayerRayCast : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {
+    {                  
         ShotRay();
     }
 
@@ -53,7 +53,7 @@ public class SG_PlayerRayCast : MonoBehaviour
             {
                 if (Physics.SphereCast(rayPotisionObj.transform.position, rayRadius, transform.forward, out rayHit, maxDis))
                 {
-                    Debug.Log("Coty == false µé¾î¿È");
+                    //Debug.Log("Coty == false µé¾î¿È");
                     //Debug.LogFormat("¹°Ã¼¸¦ ¸¸³µÀ»¶§ ³¯¾Æ°£ °Å¸® -> {0}", rayHit.distance);
 
                     getMeshFilter = rayHit.collider.gameObject.GetComponent<MeshFilter>();
@@ -77,7 +77,7 @@ public class SG_PlayerRayCast : MonoBehaviour
 
             else if (isCopy == true)
             {
-                Debug.Log("Coty == True µé¾î¿È");
+                //Debug.Log("Coty == True µé¾î¿È");
                 myMeshFilter.mesh = null;
                 myMeshRenderer.material = null;
                 getMeshFilter = null;

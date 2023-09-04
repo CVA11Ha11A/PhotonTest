@@ -26,7 +26,7 @@ public class SG_PlayerPunchJudgment : MonoBehaviourPun
             oneTimeCall = true;
             photonView.RPC("IsPunch", RpcTarget.MasterClient);
             //Debug.Log("함수가실행되나?");
-            Debug.LogFormat("Collider -> {0} isNull? -> {1}", judgmentColliders, judgmentColliders == null);
+            //Debug.LogFormat("Collider -> {0} isNull? -> {1}", judgmentColliders, judgmentColliders == null);
         }
     }
 
