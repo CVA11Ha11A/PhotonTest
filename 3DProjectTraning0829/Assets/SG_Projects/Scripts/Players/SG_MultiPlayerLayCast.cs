@@ -37,17 +37,17 @@ public class SG_MultiPlayerLayCast : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetMouseButtonDown(1) && photonView.IsMine)
+        {
+            Debug.LogFormat("ID : {0} 가 마스터에게 체크 요청", photonView.ViewID);
+            photonView.RPC("CheckCopy", RpcTarget.MasterClient, isCopy);
+            //photonView.RPC("ShotRay", RpcTarget.MasterClient);
+        }
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(1) && photonView.IsMine)
-        {
-            Debug.LogFormat("ID : {0} 가 마스터에게 체크 요청", photonView.ViewID);
-            photonView.RPC("CheckCopy",RpcTarget.MasterClient,isCopy);
-            //photonView.RPC("ShotRay", RpcTarget.MasterClient);
-        }
+        
     }
 
 
